@@ -1,0 +1,57 @@
+<%= form_for(@animal) do |f| %>
+  <% if @animal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@animal.errors.count, "error") %> prohibited this animal from being saved:</h2>
+
+      <ul>
+      <% @animal.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :animal_type %><br />
+    <%= f.text_field :animal_type %>
+  </div>
+  <div class="field">
+    <%= f.label :nickname %><br />
+    <%= f.text_area :nickname %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :date_incoming %><br />
+    <%= f.date_select :date_incoming %>
+  </div>
+  <div class="field">
+    <%= f.label :id_user %><br />
+    <%= f.text_field :id_user %>
+  </div>
+  <div class="field">
+    <%= f.label :id_breed %><br />
+    <%= f.text_field :id_breed %>
+  </div>
+  <div class="field">
+    <%= f.label :label %><br />
+    <%= f.text_area :label %>
+  </div>
+  <div class="field">
+    <%= f.label :signs %><br />
+    <%= f.text_area :signs %>
+  </div>
+  <div class="field">
+    <%= f.label :id_hair_type %><br />
+    <%= f.text_field :id_hair_type %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

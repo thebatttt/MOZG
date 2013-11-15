@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @vaccination.id %>
+</p>
+
+<p>
+  <b>Id animal:</b>
+  <%= @vaccination.id_animal %>
+</p>
+
+<p>
+  <b>Id type:</b>
+  <%= @vaccination.id_type %>
+</p>
+
+<p>
+  <b>Date vacc:</b>
+  <%= @vaccination.date_vacc %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @vaccination.notes %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%= @vaccination.cost %>
+</p>
+
+<p>
+  <b>Check:</b>
+  <%= @vaccination.check %>
+</p>
+
+
+<%= link_to 'Edit', edit_vaccination_path(@vaccination) %> |
+<%= link_to 'Back', vaccinations_path %>

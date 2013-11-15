@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 
+  id_animal: 
+  id_type: 
+  date_vacc: 2013-11-15
+  notes: MyText
+  cost: 1.5
+  check: 
+
+two:
+  id: 
+  id_animal: 
+  id_type: 
+  date_vacc: 2013-11-15
+  notes: MyText
+  cost: 1.5
+  check: 
